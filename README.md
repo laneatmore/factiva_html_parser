@@ -5,8 +5,8 @@ It will give you a metadata file with the following headers: HD, BY, WC, PD, SN 
 And individual text files for each of the articles with the name of the files coded by index (line 1 in the metadata matches article 1.txt) \
 NB: python is 0-indexed so the index begins with 0
 
-html_parser_windows.py has RN coded line endings \
-html_parser_unix.py has LF coded line endings \
+html_parser_windows.py has RN coded line endings (for Windows)\
+html_parser_unix.py has LF coded line endings (for Mac/Linux)\
 Make sure you download the version for your OS
 
 Required python packages: \
