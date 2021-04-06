@@ -2,7 +2,7 @@
 
 This script is designed to parse Factiva html files for input into TXM: http://textometrie.ens-lyon.fr/?lang=en \
 It will give you a metadata file with the following headers: ID, HD, BY, WC, PD, SN \
-and individual text files for each of the articles with the name of the files coded by ID (Article 1 in the metadata matches article 1.txt) \
+and individual text files for each of the articles with the name of the files coded by ID (Article 1 in the metadata matches article 1.txt) 
 
 
 html_parser_windows.py has RN coded line endings (for Windows)\
