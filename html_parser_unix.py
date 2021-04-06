@@ -26,9 +26,9 @@ HTML = str(sys.argv[1])
 
 factiva = pd.concat([art for art in pd.read_html(HTML, index_col=0)if 'HD' in art.index.values], axis=1).T.set_index('AN')
 factiva = factiva.reset_index()
-factiva['Article Number'] = factiva.index
+factiva['ID'] = factiva.index
 
-meta_data = factiva[['Article Number', 'HD','BY','WC','PD','SN']]
+meta_data = factiva[['ID', 'HD','BY','WC','PD','SN']]
 meta_data.to_csv('Metadata.csv', sep = ',', index = False, header = True)
 
 articles = factiva[['LP','TD']]
